@@ -29,12 +29,10 @@ class tools():
         s.send(cmd)
         time.sleep(0.3)
         result = s.recv(1024)
-        checkResult(result,email)
+        return self.checkResult(result,email)
 
     def checkResult(self,result,email):
         if '250' in result:
-            print 'RESULT: Valid e-mail\n'
             return True
         else:
-            print 'RESULT: Not a valid e-mail\n'
             return False
