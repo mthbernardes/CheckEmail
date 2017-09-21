@@ -1,7 +1,7 @@
-#checkEmail
+# checkEmail
 Generate possible e-mails and test it.
 
-#Install
+# Install
 
 ```Bash
 git clone
@@ -9,7 +9,7 @@ cd checkEmail
 pip install dnspython
 ```
 
-#Usage
+# Usage
 To generate e-mails you need a file with names, like the example.
 
 ```Bash
