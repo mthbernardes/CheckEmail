@@ -1,3 +1,4 @@
+import sys
 from utils import mailTool
 
 if len(sys.argv) < 2:
