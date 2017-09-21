@@ -9,6 +9,7 @@ mail = mailTool.tools()
 for email in open(sys.argv[1]):
     if email:
         domain = mail.split('@')[1].strip()
+        email = email.strip()
         mxserver = mail.getMx(domain)
         print 'MX SERVER: %s' % mxserver
         print 'EMAIL: %s' % email
